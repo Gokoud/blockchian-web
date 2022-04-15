@@ -24,5 +24,5 @@ const routerList = computed(() => router.options.routes.map((route) => {
 </script>
 
 <style scoped lang='scss'>
-@import 'ms-header';
+@import './ms-header.scss';
 </style>

@@ -6,5 +6,5 @@
 </script>
 
 <style scoped lang='scss'>
-@import 'ms-footer.scss';
+@import 'ms-footer';
 </style>
