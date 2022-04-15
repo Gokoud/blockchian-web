@@ -1,5 +1,5 @@
 <template>
-    <div>底部组件</div>
+    <div>底部</div>
 </template>
 
 <script setup>
