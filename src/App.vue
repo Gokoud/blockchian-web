@@ -1,5 +1,5 @@
 <template>
-  <ms-header>用来测试提交远程分支</ms-header>
+  <ms-header>用来</ms-header>
   <router-view/>
   <ms-footer></ms-footer>
 </template>
