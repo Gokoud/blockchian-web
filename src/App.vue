@@ -1,5 +1,5 @@
 <template>
-  <ms-header></ms-header>
+  <ms-header>现在是 master 分支</ms-header>
   <router-view/>
   <ms-footer></ms-footer>
 </template>
