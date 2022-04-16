@@ -1,5 +1,5 @@
 <template>
-  <ms-header>用来</ms-header>
+  <ms-header></ms-header>
   <router-view/>
   <ms-footer></ms-footer>
 </template>
