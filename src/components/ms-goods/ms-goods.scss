@@ -1,0 +1,42 @@
+.goods {
+    border-radius: $radius-md;
+    box-shadow: $border-shadow;
+    transform: translateY(0);
+    transition: all 300ms ease-in-out;
+    &:hover {
+        transform: translateY(-2%);
+
+    }
+    .img {
+        position: relative;
+        padding-top: 100%;
+        .img-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: $radius-md $radius-md 0 0;
+            object-fit: cover;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120px;
+        padding: 0 10px;
+        .title {
+            color: $primary-color;
+            font-size: $text-xl-size;
+            font-weight: bold;
+        }
+        .description {
+            color: $text-drak-color;
+            font-size: $text-lg-size;
+        }
+        .price {
+            color: $text-gray-color;
+            font-size: $text-md-size;
+        }
+    }
+}
