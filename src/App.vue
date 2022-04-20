@@ -1,13 +1,13 @@
+<script setup>
+import msHeader from '@/components/ms-header/ms-header.vue'
+import msFooter from '@/components/ms-footer/ms-footer.vue'
+</script>
+
 <template>
-  <ms-header>现在是 master 分支</ms-header>
+  <ms-header></ms-header>
   <router-view/>
   <ms-footer></ms-footer>
 </template>
-
-<script setup>
-import msHeader from './components/ms-header/ms-header.vue'
-import msFooter from './components/ms-footer/ms-footer.vue'
-</script>
 
 <style>
 @import url('./style/normal.css');
