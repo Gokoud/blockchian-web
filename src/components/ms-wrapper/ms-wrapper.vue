@@ -21,15 +21,15 @@ const moveMouse = (e) => {
     const height = window.innerHeight;
     let lMouseX = Math.max(-100, Math.min(100, width / 2 - e.clientX));
     let lMouseY = Math.max(-100, Math.min(100, height / 2 - e.clientY));
-    lFollowX.value = (12 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-    lFollowY.value = (10 * lMouseY) / 100;
+    lFollowX.value = (4 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY.value = (2 * lMouseY) / 100;
 }
 animate()
 </script>
 
 <template>
     <div class="wrapper" ref="wrapper" @mousemove="moveMouse" @click="moveMouse">
-        <img class="wrapper-child" :style="transform" src="@/static/images/animation-example.jpg" alt="悬浮相框">
+        <img class="wrapper-child" :style="transform" src="@/static/images/animation-example.png" alt="悬浮相框">
     </div>
 </template>
 
