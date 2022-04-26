@@ -1,36 +1,13 @@
 <script setup>
 import { fromJSON } from 'postcss';
 import { onMounted, reactive, ref } from 'vue';
+import { useCanvas } from '@/hooks/useCanvas';
 import MsSwiperGoods from '@/components/ms-swiper-goods/ms-swiper-goods.vue';
 import MsWrapper from '@/components/ms-wrapper/ms-wrapper.vue';
 import MsBanner from '@/components/ms-banner/ms-banner.vue';
 
-const drawCanvas = async () => {
-    const canvas = document.getElementById('canvas');
-    const image = await createImg();
-    const ctx = canvas.getContext("2d", {
-        antialias: true // 开启抗锯齿
-    });
-    // 初始化
-    ctx.clearRect(0, 0, 500, 500);
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, 500, 500)
-    ctx.save();
-    
-    //When there are five arguments, the drawImage function scales the image
-    const cutPicWidth = image.width / 2;
-    const cutPicHeight = image.height;
-    //Apart from element object ,the first four slices, the last four scales
-    ctx.drawImage(image, 0, 0, cutPicWidth, cutPicHeight, 0, 0, 400, 400);
-}
-const createImg = () => {
-    return new Promise((resolve) => {
-        const img = new Image();
-        img.src = '/src/static/images/animation-example.png';
-        img.setAttribute('crossorigin', 'anonymous')
-        img.onload = () => resolve(img)
-    })
-}
+const { drawCanvas } = useCanvas('canvas')
+
 onMounted(() => {
     drawCanvas()
 })
