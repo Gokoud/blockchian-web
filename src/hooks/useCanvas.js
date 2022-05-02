@@ -16,9 +16,9 @@ export const useCanvas = (elementId) => {
             antialias: true // 开启抗锯齿
         });
         // 初始化,清理出一片 500*500 的透明区域
-        ctx.clearRect(0, 0, 500, 500);
+        ctx.clearRect(0, 0, 400, 400);
         ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, 500, 500);
+        ctx.fillRect(0, 0, 400, 400);
         
         // 裁切圆形图片, COTC as Center of the circle
         const COTCX = canvas.width / 2;

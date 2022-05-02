@@ -1,6 +1,6 @@
 <script setup>
-import msHeader from '@/components/ms-header/ms-header.vue'
-import msFooter from '@/components/ms-footer/ms-footer.vue'
+import MsHeader from '@/components/ms-header/ms-header.vue'
+import MsFooter from '@/components/ms-footer/ms-footer.vue'
 </script>
 
 <template>

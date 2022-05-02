@@ -7,17 +7,17 @@ import MsWrapper from '@/components/ms-wrapper/ms-wrapper.vue';
 import MsBanner from '@/components/ms-banner/ms-banner.vue';
 
 const { drawCanvas } = useCanvas('canvas')
-
 onMounted(() => {
     drawCanvas()
 })
+
 </script>
 
 <template>
     <div class="exhibition-area">
         <ms-wrapper></ms-wrapper>
-        <!-- <ms-banner></ms-banner> -->
-        <div class="canvas">
+        <ms-banner></ms-banner>
+        <div class="canvas" style="display: none;">
             <canvas id="canvas" width="400" height="400"></canvas>
         </div>
     </div>
@@ -49,6 +49,7 @@ onMounted(() => {
         left: 0;
         right: 0;
         height: 2px;
+        transform: rotate(180deg);
     }
 }
 </style>
