@@ -2,9 +2,11 @@
 </script>
 
 <template>
-    <footer></footer>
+    <footer>
+        
+    </footer>
 </template>
 
 <style scoped lang='scss'>
-@import 'ms-footer';
+@import 'ms-footer.scss';
 </style>
