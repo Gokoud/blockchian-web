@@ -12,6 +12,9 @@ const list = reactive(mockData.data.slice(0, 10));
 const fetchGithubApi = () => {
     http.get('/users')
 }
+const insertOrderInfo = () => {
+    return []
+}
 const { drawCanvas } = useCanvas('canvas');
 
 onMounted(() => {
