@@ -20,6 +20,7 @@ const { drawCanvas } = useCanvas('canvas');
 onMounted(() => {
     drawCanvas();
     fetchGithubApi()
+    insertOrderInfo()
 });
 
 </script>
