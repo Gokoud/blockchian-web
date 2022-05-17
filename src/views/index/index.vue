@@ -9,14 +9,14 @@ import MsBanner from '@/components/ms-banner/ms-banner.vue';
 import MsGoodsList from '@/components/ms-goods-list/ms-goods-list.vue'
 
 const list = reactive(mockData.data.slice(0, 10));
-const test_get = () => {
+const fetchGithubApi = () => {
     http.get('/users')
 }
 const { drawCanvas } = useCanvas('canvas');
 
 onMounted(() => {
     drawCanvas();
-    test_get()
+    fetchGithubApi()
 });
 
 </script>
