@@ -43,7 +43,6 @@ onMounted(() => {
 
 .canvas {
     position: relative;
-
     &::before {
         content: 'Y';
         position: absolute;
@@ -53,7 +52,6 @@ onMounted(() => {
         width: 2px;
         background-color: $primary-color;
     }
-
     &::after {
         content: 'X';
         position: absolute;
