@@ -9,7 +9,7 @@ const goods = reactive(props.goods)
 <template>
   <div class="goods">
     <div class="img">
-      <img class="img-child" :src="goods.goods_img" alt="商品图片">
+      <img class="img-child" :src="goods.goods_img">
     </div>
     <div class="info">
       <div class="title">{{goods.title}}</div>
