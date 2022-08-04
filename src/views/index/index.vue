@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
     <div class="exhibition-area">
         <ms-wrapper></ms-wrapper>
-        <ms-banner></ms-banner>
+        <!-- <ms-banner></ms-banner> -->
         <div class="canvas">
             <canvas id="canvas" width="400" height="400"></canvas>
         </div>
