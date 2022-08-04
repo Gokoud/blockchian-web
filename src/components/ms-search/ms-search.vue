@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <div class="search"></div>
+  <div class="search">
+    <!-- TODO: 搜索页面 -->
+  </div>
 </template>
 
 <style scoped lang='scss'>
