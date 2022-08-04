@@ -24,10 +24,11 @@ onMounted(() => {
 <template>
     <div class="exhibition-area">
         <ms-wrapper></ms-wrapper>
-        <ms-banner></ms-banner>
-        <div class="canvas">
+        <!-- <ms-banner></ms-banner> -->
+        <!-- <div class="canvas">
             <canvas id="canvas" width="400" height="400"></canvas>
-        </div>
+        </div> -->
+        <div class="card"></div>
     </div>
     <main>
         <ms-goods-list :list="list"></ms-goods-list>
@@ -58,5 +59,10 @@ onMounted(() => {
         height: 2px;
         transform: rotate(180deg);
     }
+}
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #f00000;
 }
 </style>

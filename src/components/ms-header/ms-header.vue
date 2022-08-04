@@ -7,7 +7,6 @@ const router = useRouter()
 const routerList = computed(() => router.options.routes.map((route) => {
   return { path: route.path, title: route.meta.title }
 }))
-
 </script>
 
 <template>
