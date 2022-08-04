@@ -28,7 +28,9 @@ onMounted(() => {
         <div class="canvas">
             <canvas id="canvas" width="400" height="400"></canvas>
         </div>
-        <div class="card"></div>
+        <div class="card">
+            这是用来合并代码的！！
+        </div>
     </div>
     <main>
         <ms-goods-list :list="list"></ms-goods-list>
