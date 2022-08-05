@@ -4,18 +4,22 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "swiper": "^8.1.4",
     "lodash": "^4.17.21",
+    "rgbaster": "^2.1.1",
+    "swiper": "^8.1.4",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
+    "@types/node": "^18.6.2",
     "@vitejs/plugin-vue": "^2.3.0",
     "sass": "^1.50.0",
-    "vite": "^2.9.0"
+    "typescript": "^4.7.4",
+    "vite": "^2.9.0",
+    "vue-tsc": "^0.39.2"
   }
 }
