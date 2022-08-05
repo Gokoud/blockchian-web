@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "lodash": "^4.17.21",
     "rgbaster": "^2.1.1",
     "swiper": "^8.1.4",
